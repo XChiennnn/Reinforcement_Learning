@@ -43,6 +43,8 @@
 > 2. 从直觉上来讲，获得的反馈应与结果相关，因此此处reward可以用全概率公式拆分为
 >
 >    ​                                 $p(r|s,a)$=$\sum_{s^{'}} p(s^{'}|s,a)p(r|s,a,s^{'})$
+>    
+>    之所以写出这样，是为了reward能有效的评价当前动作获得的奖励，而不是当前状态转移
 
 **trajectory** : 轨迹，即指agent在某个策略$\pi$指导下走出的一条具体路线
 
@@ -54,7 +56,7 @@
 
 #### 2 Markov decision process
 
-> 在MDP框架下给出问题建模框架
+> 在MDP框架下给出问题建模框架 
 
 **MDP 构成**
 
@@ -95,13 +97,5 @@ $$
 
 ***
 
-### CH 4  Bellman Equation
-
-
-
-
-
-
-
-
+### CH 2  State Value and Bellman Equation
 
